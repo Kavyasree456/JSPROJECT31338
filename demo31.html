@@ -1,0 +1,54 @@
+<html>
+
+    <head>
+        <title>JAVASCRIPT</title>
+        <script>
+            // template literal
+            // `` (back tick)
+            const name= "klef"
+            document.writeln(` <b> Hi ${name} </b></br>`)
+
+            // spread operator 
+
+            const a= [10,23,45,57]
+            const b=[...a,30,40]
+            document.writeln("a="+a+"</br>")
+            document.writeln("b="+b+"</br>")
+           
+            const x=[12,13,45,56]
+            const y=[56,23,90,34]
+            const z=[...x,...y]
+            document.writeln("x="+x+"</br>")
+            document.writeln("y="+y+"</br>")
+            document.writeln("z="+z+"</br>")
+            
+            const v1="kluniversity"
+            const v2=[...v1]
+            document.writeln("v1="+v1+"</br>")
+            document.writeln("v2="+v2+"</br>")
+
+            //destructuring assignment
+            const names=[10,"mswd","sdp",20]
+            document.writeln("Names="+names+"</br>")
+            document.writeln("Length="+names.length+"</br>")
+            const [i,j,k,l] = names
+            document.writeln(i+"</br>")
+            document.writeln(j+"</br>")
+            document.writeln(k+"</br>")
+            document.writeln(l+"</br>")
+
+            const [p,q]= names
+            document.writeln(p+"</br>")
+            document.writeln(q+"</br>")
+
+            const [m,,,n] = names
+            document.writeln(m+"</br>")
+            document.writeln(n+"</br>")
+        </script>
+
+    </head>
+
+    <body>
+
+    </body>
+</html>

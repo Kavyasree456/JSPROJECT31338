@@ -1,0 +1,31 @@
+<html>
+
+    <head>
+        <title>JAVASCRIPT</title>
+        <script>
+            //map method
+            const arr1 = [12,45,56,13,14,90]
+            document.writeln("Array arr1="+arr1+"</br>")
+
+          const output1 = arr1.map((element) => (element*5))
+          document.writeln("Output Array="+output1+"</br>")
+
+          //filter method
+          const arr2 =[20,7,42,16,9,12,11,36]
+          document.writeln("Array arr1="+arr2+"</br>")
+
+          const output2=arr2.filter((element) => (element%2==1))
+          document.writeln("Output Array="+output2+"</br>")
+
+          //reduce method
+          const arr3 = [5,8,3,7,9,2,-1]
+          const total = (sum,element) => sum=sum+element
+          const output = arr3.reduce(total,0)
+          document.writeln("Output="+output)
+        </script>
+    </head>
+
+    <body>
+
+    </body>
+</html>

@@ -1,0 +1,34 @@
+<html>
+
+    <head>
+        <title>JAVASCRIPT</title>
+        <script>
+            //declaration of an array using new keyword
+            let arr= new Array()//size is optional
+            const n = parseInt(prompt("Enter Array Size",1))
+            alert("Reading Array Elements")
+            for(let i=0;i<n;i++)
+            {
+                arr[i] = parseInt(prompt("Enter Element "+(i+1)))
+            }
+            document.writeln("<u>Displaying Array Elements</u></br>")
+            for(let element of arr)
+            {
+               document.writeln(element)
+            }
+            const products= new array("mobile","laptop","watch") //constructor
+            document.writeln("</br>")
+            document.writeln("Products Array Length:"+products.length+"</br>")
+            document.writeln("Products Array Type:"+typeof products+"</br>")
+            document.writeln("Product Array Elements</br>")
+            for(const p of products)
+            {
+                document.writeln(p)
+            }
+        </script>
+    </head>
+
+    <body>
+
+    </body>
+</html>

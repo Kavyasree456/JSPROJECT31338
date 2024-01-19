@@ -1,0 +1,45 @@
+<html>
+
+    <head>
+        <title>JAVASCRIPT</title>
+        <script>
+            //map object - foreach method
+
+        const mapobj1 = new Map()
+        mapobj1.set("id",123)  
+        mapobj1.set("name","klef")
+        mapobj1.set(1,100)
+        document.writeln("Map Object 1 Size=0"+mapobj1.size+"</br>")
+        document.writeln("<u>Display Map object 1 based on values</u></br>")
+
+        mapobj1.forEach( (v)=> {
+            document.writeln(v+"</br>")
+        })
+
+        document.writeln("<u>Display Map object 1 based on keys and values</u></br>")
+
+       mapobj1.forEach( (v,k) => {
+            document.writeln(k+":"+v+"</br>")
+        })
+        const mapobj2 = new Map([  ["id",100],["name","klef"]   ])  //constructor
+
+        document.writeln("Map Object 2 Size=0"+mapobj2.size+"</br>")
+
+        document.writeln("<u>Display Map object 2 based on values</u></br>")
+
+        mapobj2.forEach( (v) => document.writeln(v+"</br>"))
+
+        document.writeln("<u>Display Map object 2 based on keys and values</u></br>")
+        
+        const view = (v,k) => {
+            document.writeln(k+":"+v+"</br>")
+        }
+
+        mapobj2.forEach(view) // view function is callback
+        </script>
+    </head>
+
+    <body>
+
+    </body>
+</html>
